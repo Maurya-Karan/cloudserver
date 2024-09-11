@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 
 app.use(
     cors({
-      origin: "*" || "https://f6c6-174-129-135-255.ngrok-free.app/",
+      origin: '*',
       methods: ["GET", "POST"],
       credentials: true,
     })
