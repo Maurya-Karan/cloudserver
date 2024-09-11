@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 
 app.use(
     cors({
-      origin: "https://main.d2o1mus1833kg7.amplifyapp.com/",
+      origin: "*",
       methods: ["GET", "POST"],
       credentials: true,
     })
