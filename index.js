@@ -115,7 +115,9 @@ app.post('/verify-payment', (req, res) => {
     res.status(500).json({ status: 'error', message: 'Error verifying payment' });
   }
 });
-
+app.get("/",(req,res)=>{
+  res.send("Listening of port : 3000");
+})
 app.listen(port, () => {
   console.log(`I'm running on port ${port}`);
 });
