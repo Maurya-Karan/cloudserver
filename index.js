@@ -5,13 +5,14 @@ const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
 const { validateWebhookSignature } = require('razorpay/dist/utils/razorpay-utils');
+const mongoose = require('mongoose');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(
     cors({
-      origin: 'https://main.d2o1mus1833kg7.amplifyapp.com',
+      origin: '*',
       methods: ["GET", "POST"],
       credentials: true,
     })

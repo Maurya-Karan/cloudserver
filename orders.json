@@ -1,3 +1,10 @@
 [
-
+  {
+    "order_id": "order_Ovur4czuzNNf0K",
+    "amount": 5000,
+    "currency": "INR",
+    "receipt": "receipt#1",
+    "status": "paid",
+    "payment_id": "pay_Ovus4zJ84Dhzps"
+  }
 ]
